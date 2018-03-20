@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>PORTFOLIO</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Online portfolio website for Sidney Kingsley.">
+  <meta name="keywords" content="graphics,art,design,digital design,portfolio,artist,software development,application design">
+  <meta name="author" content="Sidney Kingsley">
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="shortcut icon" type="x-icon" href="assets/img/icon.png" />
+  <script type="text/javascript" src="script/script.js" async></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!--JQUERY for scroll smoothing-->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>      <!--font awsome for responsive icons-->
+</head>
+<body>
+  <!--page loading cover-->
+  <div id="cover"></div>
+
+
+  <element onscroll="myScript">
+
+  <!-- NAVIGATION -->
+  <nav id="nav">
+    <p id="nav-header">digital media design</p>
+    <ul>
+      <li id="w-nav"><a href="#w-content" onclick="navClose()">web design</a></li>
+      <li>|</li>
+      <li id="g-nav"><a href="#g-content" onclick="navClose()">graphic design</a></li>
+      <li>|</li>
+      <li id="a-nav"><a href="#a-content" onclick="navClose()">application design</a></li>
+      <li>|</li>
+      <li id="p-nav"><a href="#p-content" onclick="navClose()">photography</a></li>
+      <li>|</li>
+      <li id="f-nav"><a href="#f-content" onclick="navClose()">fashion design</a></li>
+    </ul>
+    <div id="nav-social-icons">
+      <a href="https://www.facebook.com/sidneyakingsley"><img src="assets/img/socialIcons/icon-f.png" class="social-icon-style" onmouseover="imgHover(this)" onmouseout="imgOff(this)"></a>
+      <a href="https://www.instagram.com/sidneyakingsley/"><img src="assets/img/socialIcons/icon-i.png" class="social-icon-style" onmouseover="imgHover(this)" onmouseout="imgOff(this)"></a>
+      <a href="https://www.depop.com/sidneyakingsley"><img src="assets/img/socialIcons/icon-d.png" class="social-icon-style" onmouseover="imgHover(this)" onmouseout="imgOff(this)"></a>
+    </div>
+    <div class="bottomL">
+      <button onclick="navClose()">
+        <p id="tag-nav-text-close">hide</p>
+        <img id="tag-nav-icon-close" src="assets/img/nav-close-icon.png" width="18px">
+      </button>
+    </div>
+    <p id="nav-footer">Copyright &copy;	2018 - All Rights Reserved</p>
+  </nav>
+
+  <!-- MOBILE NAVIGATION button -->
+  <button id="mobile-nav-button" onclick="mobileNavOpen()"><i class="fas fa-bars"></i></button>
+
+  <!-- MOBILE NAVIGATION content -->
+  <div id="mobile-nav">
+  <button id="mobile-nav-closebutton" onclick="mobileNavClose()"><i class="fas fa-bars fa-spin"></i></button>
+    <ul id="mobile-nav-list">
+      <a href="#w-content" onclick="mobileNavClose()"><li id="w-mnav"><div style="margin-left:20px;">web design</div></li></a>
+      <a href="#g-content" onclick="mobileNavClose()"><li id="g-mnav"><div style="margin-left:20px;">graphic design</div></li>
+      <a href="#a-content" onclick="mobileNavClose()"><li id="a-mnav"><div style="margin-left:20px;">application design</div></li>
+      <a href="#p-content" onclick="mobileNavClose()"><li id="p-mnav"><div style="margin-left:20px;">photography</div></li>
+      <a href="#f-content" onclick="mobileNavClose()"><li id="f-mnav"><div style="margin-left:20px;">fashion design</div></li>
+    </ul>
+  </div>
+
+  <!-- WELCOME SCREEN -->
+  <div id="welcome-msg">
+    <div id="slider" class="transition">
+      <h1 id="welcome-text1" class="transition">portfolio</h1>
+      <h1 id="welcome-text2">sidney kingsley</h1>
+      <div id="welcome-slide">
+          <img class="wslides" src="assets/img/welcomeFlick/sk1.png" width="50px">
+          <img class="wslides" src="assets/img/welcomeFlick/sk2.png" width="50px">
+          <img class="wslides" src="assets/img/welcomeFlick/sk3.png" width="50px">
+          <img class="wslides" src="assets/img/welcomeFlick/sk4.png" width="50px">
+          <img class="wslides" src="assets/img/welcomeFlick/sk5.png" width="50px">
+          <img class="wslides" src="assets/img/welcomeFlick/sk6.png" width="50px">
+          <img class="wslides" src="assets/img/welcomeFlick/sk7.png" width="50px">
+      </div>
+    </div>
+  </div>
+
+  <!-- FIXED ELEMENTS -->
+  <div class="left">
+    <img id="title-name" src="assets/img/title-name-vec.png" width="20px">
+  </div>
+  <div class="bottomL">
+    <button onclick="navOpen()">
+      <p id="tag-nav-text">nav</p>
+      <img id="tag-nav-icon" src="assets/img/nav-open-icon.png" width="18px">
+    </button>
+  </div>
+  <div class="bottomR">
+    <h1 id="title-page-num">01</h1>
+  </div>
+  <div id="scroll">
+    <h3 id="tag-scroll"><a href="#w-content">SCROLL FOR MORE</a></h3>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="wrapper">
+    <!-- new row -->
+    <div class="top">
+      <h1 id="title-portfolio">PORTFOLIO</h1>
+      <img src="assets/img/mobile-logo-con.png" width="50px" id="mobile-logo">
+    </div>
+    <!-- new row -->
+    <div class="middle">
+      <div id="slide-sort">
+        <a href="#a-content"><img class="mySlides" src="assets/img/bgSlide/sound-vis-bg.png" width="100%"></a>
+        <a href="#g-content"><img class="mySlides" src="assets/img/bgSlide/paint-bg.png" width="100%"></a>
+        <a href="#p-content"><img class="mySlides" src="assets/img/bgSlide/band-bg.png" width="100%"></a>
+      </div>
+    </div>
+
+    <!-- new page + row -->
+    <div class="web">
+        <article id="w-content">
+          <h1 class="content-title">Web Design</h1>
+          <p>The most recent websites I have designed and created.</p>
+        </article>
+    </div>
+    <!-- new row -->
+    <div class="w-split1a">
+          <a href="http://www.callumgardnerofficial.co.uk"><img src="assets/img/websites/callum.png" width="95%" class="g-img"></a>
+    </div>
+    <!-- new row -->
+    <div class="w-split1b">
+          <h2 class="content-subtitle">Callum Gardner</h2>
+          <p>Callum is a musician in the London Area who I used to know through family friends. He approached me a year ago asking if I could create a website for him to expand his brand.</p>
+          <p>Callum's industry is very social and therefore we agreed important for him for it to include plenty social links and updates as well as a photo gallery. I also realised after listening to some of his music in the design/concept stage that I wanted the website to appear playful and creative, mirroring the nature of his music due to the slight edge of it. I did this through the bright colour scheme and use of subtle animations such as the blur-clear hover on the homepage.</p>
+          <p style="font-weight:bold"><a href="http://www.callumgardnerofficial.co.uk">www.callumgardnerofficial.co.uk</a></p>
+    </div>
+    <!-- new row -->
+    <div class="w-split2a">
+      <h2 class="content-subtitle">This Website!</h2>
+      <p>I designed and created this website from scratch, as I did Callum's, using HTML, CSS and JavaScript. As far as libraries go I used the inbuilt CSS3 'Grids' framework and one line of JQuery for the scrolling animation.</p>
+      <p>I have also created other webpages to display my programs created in JavaScript, but they are in the <a href="#a-content" style="font-weight: bold">applications</a> section. I have created numerous additional websites throughout the years, but I haven't put these up on a server.</p>
+    </div>
+    <!-- new row -->
+    <div class="w-split2b">
+        <img src="assets/img/websites/portfolio-design.png" width="95%" class="g-img">
+    </div>
+
+    <!-- new page + row -->
+    <div class="graphics">
+        <article id="g-content">
+          <h1 class="content-title">Graphic Design</h1>
+          <p>This is a selection of works created for my sixth form course.</p>
+        </article>
+    </div>
+    <!-- new row -->
+    <div class="g-split1a">
+          <h2 class="content-subtitle">Album Cover Assignment</h2>
+          <p>In this assignment we were asked to create a fictional series of album covers for the band Muse's song "Uprising". In these designs I aimed to capture the emotive nature of the song; specifically, the anger portrayed and the energy evoked by the sense of 'revolution'.</p>
+          <p>I used a combination of different techniques such as long-exposure photography and mixed-media. I also included painting, I did this in a style inspired by Pollock's drip painting; due to the emotional and chaotic nature of his paintings which I felt was mirrored in the song.</p>
+    </div>
+    <!-- new row -->
+    <div class="g-split1b">
+          <img src="assets/img/graphics/muse.png" width="95%" class="g-img">
+    </div>
+    <!-- new row -->
+    <div class="g-full">
+          <img src="assets/img/graphics/muse-layed-landscape.png" width="95%" class="g-img">
+    </div>
+    <!-- new row -->
+    <div class="g-split2a">
+        <img src="assets/img/graphics/magazine-finals.png" width="95%" class="g-img">
+</div>
+    <!-- new row -->
+    <div class="g-split2b">
+        <h2 class="content-subtitle">Magazine Covers</h2>
+        <p>This assignment was a chance to challenge our ability to really conceptualise the subject, Rosa Parks, and think of unusual ways to represent what we think the subject represents in the medium of layout, while keeping it interesting.</p>
+        <p></p>
+    </div>
+    <!-- new row -->
+    <div class="g-split2c">
+        <img src="assets/img/graphics/magazine-experiment.png" width="95%" class="g-img">
+    </div>
+    <!-- new row -->
+    <div class="g-split3a">
+          <h2 class="content-subtitle">Typography</h2>
+          <p>I experimented a lot into typography throughout the years. Perhaps my most significant design, for me, would be the concrete letters I created for the Rosa Parks assignment (above). I also experimented with liquorish, nails and newspaper cuttings. </p>
+          <p>I enjoy creating typography as it is a unique and powerful way to interact with the user and portray your message.</p>
+    </div>
+    <!-- new row -->
+    <div class="g-split3b">
+          <img src="assets/img/graphics/typo-l.png" width="98%" class="g-img">
+    </div>
+    <!-- new row -->
+    <div class="g-split4a">
+          <h2 class="content-subtitle">Various</h2>
+          <p>a collection of sketchbook works</p>
+          <img src="assets/img/graphics/g-img1.jpg" width="100%" style="padding:0; margin-top:20px;" class="g-img">
+          <img src="assets/img/graphics/g-img2.jpg" width="100%" style="padding:0" class="g-img">
+          <img src="assets/img/graphics/g-img6.jpg" width="100%" style="padding:0" class="g-img">
+    </div>
+    <!-- new row -->
+    <div class="g-split4b">
+          <img src="assets/img/graphics/g-img3.jpg" class="halved-img" class="g-img">
+          <img src="assets/img/graphics/g-img4.jpg" class="halved-img" style="padding:0" class="g-img">
+          <img src="assets/img/graphics/g-img5.jpg" width="100%" style="padding:0" class="g-img">
+    </div>
+
+    <!-- new page + row -->
+    <div class="application">
+        <article id="a-content">
+          <h1 class="content-title">Application Design</h1>
+          <p>This is a selection of appliations created over the years</p>
+        </article>
+    </div>
+    <!-- new row -->
+    <div class="a-split1a">
+          <h2 class="content-subtitle">Marine Weather</h2>
+          <p>This is a web-based application I created using JavaScript and the .p5 library which took data from APIs and visualised it in an easy to read and aesthetically pleasing way. I hoped this program would communicate a lot of different data simply and easily; making it possible for use while on the water. </p>
+          <p>I used an API key from worldweatheronline.com which has unfortunately run out as I was using an educational trial; this means I can't link the actual application, but I have included these screenshots. I also used Google's map API which, with some regex work, I was able to use to translate entered place names into coordinates (as required by the weather API).</p>
+          <p>This was a very enjoyable project focused on UX/UI which gave me the opportunity to really try and cater to my perspective audience and practice my creativity in design and also add small playful touches. However, I ended up simplifying my designs a lot as you can see to increase functionality and fit into my time schedule. I also really enjoyed the mathematic side to the programming and the challenge of problem solving within it. </p>
+          <p>For the data visualisation: </p>
+          <ul class="body-list">
+            <li>The wind direction was portrayed by the direction of the particles</li>
+            <li>The wind speed by the speed travelled</li>
+            <li>The water temperature by the icon background colour: blue to red</li>
+            <li>The cloud cover by the canvas background colour: blue to white</li>
+            <li>The weather description in text and icon as well as in icons inside the particles</li>
+            <li>Swell height was communicated by the height of the canvas </li>
+          </ul>
+          <img src="assets/img/applications/a-img2.png" width="100%" style="margin-top:10px;">
+    </div>
+    <!-- new row -->
+    <div class="a-split1b">
+          <img src="assets/img/applications/a-img1.png" width="100%">
+          <img src="assets/img/applications/a-img3.png" width="100%">
+    </div>
+    <!-- new row -->
+    <div class="a-split2a">
+          <h2 class="content-subtitle">Generative Art</h2>
+          <p>This is a generative art program I wrote which uses algorithms to create an interactive work of art based on my chosen concept: sunset. This program uses one single rectangle and uses it to create at first a setting sun and then an eclipse with the option to add Perlin noise. It can either be let run or interacted with. I have added a link to it below:</p>
+          <p style="font-weight:bold"><a href="assets/projects/generative/index.html">sunset generative artwork</a></p>
+    </div>
+    <!-- new row -->
+    <div class="a-split2b">
+          <img src="assets/img/applications/sunset.png" width="95%">
+    </div>
+    <!-- new row -->
+    <div class="a-split3a">
+          <h2 class="content-subtitle">Communication App</h2>
+          <p>Aside of my JavaScript programming I studied .Net at college in Computer Science where I created a tenant to landlord interfacing system. This application used automated emails to transfer important messages from landlord to clients and vice versa as well as providing easily accessible information in a clear and user-friendly method. I came up with the concept, designed and coded this application myself as with all of the other programs mentioned.</p>
+          <img src="assets/img/applications/a-com1.png" class="halved-img" style="margin-top:10px;">
+          <img src="assets/img/applications/a-com4.png" class="halved-img" style="margin-top:10px;">
+          <img src="assets/img/applications/a-com5.png" class="halved-img">
+          <img src="assets/img/applications/a-com6.png" class="halved-img">
+    </div>
+    <!-- new row -->
+    <div class="a-split3b">
+          <img src="assets/img/applications/a-com2.png" width="100%">
+          <img src="assets/img/applications/a-com3.png" width="100%">
+    </div>
+    <!-- new row -->
+    <div class="a-split4a">
+          <h2 class="content-subtitle">Sound Visualisation and Video Manipulation</h2>
+          <p> In this assignment we were asked to create a video or audio manipulation program in the node-based application Cycling 74's Max MSP. I created a function which took sound from the inbuilt microphone and decrypted it into frequency and volume values which I then scaled and used to manipulate a flock algorithm in reaction to the sound. I also used physical inputs from an Arduino with hacked added physical components to manipulate visual values of a live webcam.</p>
+          <p style="font-weight:bold"><a href="https://sidneykingsley406.tumblr.com/">digital making sketchbook</a></p>
+    </div>
+    <!-- new row -->
+    <div class="a-split4b">
+          <img src="assets/img/bgSlide/sound-vis-bg.png" width="95%">
+    </div>
+
+
+    <!-- new page + row -->
+    <div class="photography">
+        <article id="p-content">
+          <h1 class="content-title">Photography</h1>
+          <p>This is a brief selection of my photos. Mediums of film, digital and photogram.</p>
+        </article>
+    </div>
+    <!-- new row -->
+    <div class="p-split1a">
+          <h2 class="content-subtitle">Film Photography</h2>
+          <p>In this module in our AS levels we were studying street photography. These were some of the results from my Black and White roll. My focus was on perspective, texture and motion. I over-contrasted all of these images during production, hoping to mirror great street photographers' style such as the infamous Vivian Maier.</p>
+          <img src="assets/img/photography/film1.png" class="halved-img" style="margin-top:10px;">
+          <img src="assets/img/photography/film4.png" class="halved-img" style="margin-top:10px;">
+    </div>
+    <!-- new row -->
+    <div class="p-split1b">
+          <img src="assets/img/photography/film2.png" width="100%">
+          <img src="assets/img/photography/film3.png" width="100%">
+    </div>
+
+
+
+
+
+
+
+    <!-- new page + row //FOOTER// -->
+    <div class="more-message">
+          <h1 class="content-title" style="line-height:0px">...</h1>
+          <h2 class="content-subtitle">and much more to come!</h2>
+          <p>still in the process of adding content to the website</p>
+          <p>16/03/2018</p>
+    </div>
+
+  </div>
+
+
+
+<script type="text/javascript" src="script/slideScript.js" ></script>
+</body>
+</html>
